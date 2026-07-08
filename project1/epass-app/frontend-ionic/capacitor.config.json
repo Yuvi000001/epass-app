@@ -1,0 +1,16 @@
+{
+  "appId": "com.bgi.epass",
+  "appName": "E-PASS",
+  "webDir": "www",
+  "backgroundColor": "#FFFFFF",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "backgroundColor": "#FFFFFF",
+      "androidScaleType": "CENTER_CROP"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/* =====================================================================
+   E-PASS Theme — BGI Brand Colors
+   Overrides Ionic's default CSS variables (Material Design mode)
+   ===================================================================== */
+
+:root {
+  /* ---- Brand Palette ---- */
+  --bgi-primary: #0A4DAD;
+  --bgi-primary-dark: #073B86;
+  --bgi-gold: #D4AF37;
+  --bgi-bg: #F7F9FC;
+  --bgi-surface: #FFFFFF;
+  --bgi-text: #1A1C1E;
+  --bgi-text-secondary: #6B7280;
+  --bgi-border: #E5E8EE;
+
+  --bgi-success: #1B8A4C;
+  --bgi-success-bg: #E3F6EA;
+  --bgi-warning: #E8920A;
+  --bgi-warning-bg: #FCF1DC;
+  --bgi-danger: #DB3B3B;
+  --bgi-danger-bg: #FCE6E6;
+
+  /* ---- Ionic color overrides (primary) ---- */
+  --ion-color-primary: #0A4DAD;
+  --ion-color-primary-rgb: 10, 77, 173;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #09439690;
+  --ion-color-primary-tint: #235eb6;
+
+  /* ---- Ionic color overrides (secondary -> gold) ---- */
+  --ion-color-secondary: #D4AF37;
+  --ion-color-secondary-rgb: 212, 175, 55;
+  --ion-color-secondary-contrast: #1A1C1E;
+  --ion-color-secondary-contrast-rgb: 26, 28, 30;
+  --ion-color-secondary-shade: #bb9a30;
+  --ion-color-secondary-tint: #d8b94c;
+
+  --ion-color-success: #1B8A4C;
+  --ion-color-danger: #DB3B3B;
+  --ion-color-warning: #E8920A;
+
+  --ion-background-color: #F7F9FC;
+  --ion-text-color: #1A1C1E;
+  --ion-toolbar-background: #FFFFFF;
+  --ion-item-background: #FFFFFF;
+  --ion-font-family: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+}
+
+ion-toolbar {
+  --background: #FFFFFF;
+  --color: var(--bgi-text);
+  --border-color: var(--bgi-border);
+}
+
+ion-tab-bar {
+  --background: #FFFFFF;
+  --color: var(--bgi-text-secondary);
+  --color-selected: var(--bgi-primary);
+  border-top: 1px solid var(--bgi-border);
+}
+
+ion-card {
+  --background: #FFFFFF;
+  border: 1px solid var(--bgi-border);
+  border-radius: 14px;
+  box-shadow: none;
+}
+
+ion-button {
+  --border-radius: 12px;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+ion-item {
+  --border-radius: 12px;
+  --background: #FFFFFF;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>E-PASS — BGI Leave Management</title>
+  <meta name="theme-color" content="#0A4DAD" />
+
+  <!-- Ionic Framework (Web Components) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@7/css/ionic.bundle.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@7/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@7/dist/ionic/ionic.js"></script>
+
+  <!-- Ionicons (used via <ion-icon name="..."></ion-icon>) -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7/dist/ionicons/ionicons.js"></script>
+
+  <!-- QR code rendering (client-side) for the E-Pass screen -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+  <!-- EmailJS (sends the OTP email straight from the browser during registration) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- App theme + styles -->
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <ion-app>
+    <div id="app-root"></div>
+  </ion-app>
+
+  <!-- App scripts — order matters (each builds on the previous) -->
+  <script src="js/config.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/router.js"></script>
+
+  <script src="js/pages/splash.js"></script>
+  <script src="js/pages/login.js"></script>
+  <script src="js/pages/register.js"></script>
+  <script src="js/pages/student-dashboard.js"></script>
+  <script src="js/pages/apply-leave.js"></script>
+  <script src="js/pages/notifications.js"></script>
+  <script src="js/pages/epass.js"></script>
+  <script src="js/pages/faculty-dashboard.js"></script>
+  <script src="js/pages/hod-dashboard.js"></script>
+  <script src="js/pages/admin-dashboard.js"></script>
+  <script src="js/pages/director-dashboard.js"></script>
+  <script src="js/pages/guard-dashboard.js"></script>
+  <script src="js/pages/add-member.js"></script>
+
+  <script src="js/app.js"></script>
+
+  <!-- Capacitor's native bridge is auto-injected here by `npx cap sync` when
+       this app is packaged for Android/iOS. No manual script tag needed. -->
+</body>
+</html>
