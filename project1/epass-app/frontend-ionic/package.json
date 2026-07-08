@@ -4,6 +4,7 @@
   "description": "E-PASS - College Leave Management System (Ionic + Capacitor, HTML/CSS/JS)",
   "scripts": {
     "start": "npx http-server www -p 8100 -c-1",
+    "build": "npx cap copy && npx cap sync",
     "cap:add:android": "npx cap add android",
     "cap:add:ios": "npx cap add ios",
     "cap:sync": "npx cap sync",
