@@ -6,7 +6,7 @@
 // When running inside an Android emulator via Capacitor's local dev server,
 // use 10.0.2.2 instead of localhost.
 const APP_CONFIG = {
-  baseUrl: 'http://localhost:5000/api/v1',
+  baseUrl: 'https://epass-app.onrender.com/api',
   appName: 'E-PASS',
   collegeName: 'Bansal Group of Institutes',
   collegeTagline: 'Bhopal | Indore | Mandideep',
